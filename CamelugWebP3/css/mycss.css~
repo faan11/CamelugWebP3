@@ -1,0 +1,38 @@
+.no-support-message { display:none; } 
+.impress-not-supported .no-support-message { display:block; } 
+
+div{
+ 	display: block;
+
+    width: 600px;
+    height: 400px;
+
+    background-color: white;
+
+    color: rgb(102, 102, 102);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+}
+
+.center{
+text-align: center;
+
+}
+
+.pad7{
+	padding-top: 7em;
+	
+}
+.listnone{
+
+	list-style-type: none;
+}
+
+.imagecentered{
+	display:block;
+   margin:auto;
+
+}
+
+.vcenter{
+vertical-align: middle;
+}

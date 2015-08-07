@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Camelug presentation part 2">
+	<meta name="keywords" content"Bootstrap,WS,Laravel,AJAX">
+	<meta name="author" content="Unknown" >
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/mycss.css">
+
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<style>
+		dt{
+		color:red;		
+		}		
+		</style>
+</head>
+
+<body>
+	<div id="impress">
+		<div class="no-support-message"> 
+		Your browser doesn't support impress.js. Try Chrome or Safari. 
+		</div> 
+		<div id="main" class="step" data-x="0" data-y="4050" data-z="0" data-scale="10" >
+			<h3 >Camelug Web part 3 -<br> Client and server  </h3>				
+			
+		</div>
+		<div id="main1" class="step" data-x="-4000" data-y="-4000" >
+			<div class="center">
+    			<h1>WWW</h1>
+    			<h2>I like you</h2>
+    			<h3 class="pad7">
+					Supervisor: Fabio Pagnotta
+				</h3>
+				<img src="img/imagecc.png">
+			</div>			
+		</div>
+		<div id="client" class="step" data-x="-3000" data-y="-4000"  >
+			<h3 class="center" ><b> Part 1 </b></h3>
+			<img class="imagecentered" src="img/js.png">
+		</div>
+		<div id="server" class="step" data-x="-2000" data-y="-4000" >
+			<h3 class="center" ><b> Part 2 </b></h3>
+			<img class="imagecentered" src="img/server.png">
+		</div>
+		
+		<div id="clientandserver" class="step" data-x="-500" data-y="-4000" >
+			<h3 class="center" ><b>Part 3 </b></h3>
+			<font style="text-align:center;color:red;font-size:10em">&nbsp;&nbsp;&nbsp;&nbsp;18+</font>
+		</div>
+		
+		
+		<div id="website" class="step" data-x="-1000" data-y="-3000" >
+			<h3 class="center" ><b>Web site</b></h3>
+			<img src="img/normalsite.png">
+		</div>
+		<div id="singlepageapplication" class="step" data-x="-1000" data-y="1000"  data-z="10"  data-rotate="90" >
+			<h3 class="center">Single page application</h3>
+			<img src="img/sap.png">
+		</div>
+		
+		<div id="sap_advdadv" class="step" data-x="0" data-y="0" data-z="10">
+			<h3 class="center">Adv and disadv</h3>	
+			<font size="5">			
+			<h3>Adv</h3>			
+			<ul>			
+				<li>LRWYN -Load and render what you need</li>
+			</ul>
+			<h3>Disadv</h3>
+			<ul>
+				<li>Web Spider</li>			
+				<li>Same page:No history</li>
+			</ul>
+			</font>
+		</div>
+		
+				
+		<div id="SSMWC" class="step" data-x="1000" data-y="0" data-z="10">
+			<h2 class="center">SSMVC: Main idea </h2>
+			<img src="img/ssmwc.jpg	">
+		</div>
+		
+		<div id="SSMWC_DESCRIPTION" class="step" data-x="1000" data-y="1000" data-z="10">
+			<h2 class="center">SSMVC: Description  </h2>
+			<font size="4">
+			<ul>
+				<li> Skeleton.</li>
+				<li> Skeleton->View.</li>
+				<li> View->Components </li>
+			</ul>
+			</font>
+		</div>
+		
+		<div id="SSMWC_DESCRIPTION_1" class=" step" style="height:200px"  data-x="5000" data-y="-50"  data-rotate="90">
+			<h2 class="center">SSMVC: Components   </h2>
+			<img class="imagecentered" src="img/components.png">
+			<br>
+		</div>
+		<div id="SSMWC_DESCRIPTION_2" class=" step" style="height:800px;width:1500px"  data-x="5000" data-y="1000"  data-rotate="45">
+			<h2 class="center">SSMVC: Skeleton   </h2>
+			<img class="imagecentered left" src="img/skeleton2.jpg">
+			<code  >
+			"helloskeleton":{<br>
+        		"base":"view",<br>
+        		"targets":["P1","P2","P3"],<br>
+        		"tpl":["three-columns"],<br>
+        		"css":["three-columns-template"]<br>
+    		},			<br>
+			</code>
+		</div>
+		<div id="SSMWC_DESCRIPTION_3" class=" step" style="height:800px;width:1200px"  data-x="5000" data-y="3000"  data-rotate="90">
+			<h2 class="center">SSMVC: View   </h2>
+			<img class="imagecentered left" src="img/view.jpg">
+			<code  >
+			 "helloview":{<br>
+        		"skeleton":"helloskeleton",<br>
+        		"components": ["C1","C2","C3"]<br>
+    		 },<br>
+			</code>
+			<br>
+		</div>
+		
+		<div id="SSMWC_COMPONENTS" class=" step" style="height:400px"  data-x="7000" data-y="3000"  data-rotate="90">
+			<h2 class="center">SSMVC: Components   </h2>
+			<font size="4">
+			<dl>
+				<dt>Css</dt><dd> list of stylesheet</dd>	
+				<dt>Js</dt> <dd>javascript files,</dd>
+				<dt>Lib</dt> <dd>javascript libraries that are load before the javascri,</dd>
+				<dt>Tpl</dt> template list,</dd>
+				<dt>Event and Handlers</dt><dd> association between event and handlers,</dd>
+				<dt>Data</dt> <dd> the model</dd>
+				<dt>MakeInstance</dt> <dd> 	the prototype that will be instanciate after the component creation. </dd>
+			</dl>
+			</font>
+		</div>
+		
+		
+		<div id="SSMWC_RENDERING" class=" step" style="height:400px"  data-x="8000" data-y="6000" data-z="30"  data-rotate="190">
+			<h2 class="center">SSMVC: Rendering   </h2>
+			<ul>
+				<li>Client side</li>			
+				<li>Server side</li>
+			</ul>
+		</div>
+		
+		
+		<div id="SSMWC_RENDERING_P2" class=" step" style="height:400px"  data-x="10000" data-y="8000" data-z="30"  data-rotate="190">
+			<h2 class="center">SSMVC: Client side   </h2>
+			<ul>
+				<li> Mustache </li>
+				<li> Handlebar</li>			
+				<li> Ractive (live binding) </li>
+				
+			</ul>
+			<h2 class="center">SSMVC: Server side   </h2>
+			<ul>
+				<li> Mustache library </li>
+			</ul>
+		</div>
+		
+		<div id="SSMWC_CHOICE" class=" step" style="height:400px"  data-x="12000" data-y="6000" data-z="30"  data-scale="3" data-rotate="190">
+			<h2 class="center">SSMVC: Client side/Server side   </h2>
+			<img src="img/headache.jpg">
+		</div>
+		
+		<div id="SSMWC_SOLUTION" class=" step" style="height:800px"  data-x="6000" data-y="10000" data-z="30"  data-scale="3">
+			<h2 class="center">SSMVC: in the Middle   </h2>
+			<img src="img/render_howitworks.png">
+		</div>
+		
+	   <div id="SSMWC_PROBLEM" class=" step" style="height:200px"  data-x="9000" data-y="13000" data-z="30"  data-scale="3">
+			<h2 class="center">SSMVC: Main problem of this solution:  </h2>
+			<font size="4">
+				<dt> Formatters </dt>
+				<dd>- Functions that are associated to the templates</dd>
+				<dt>Possible solution:</dt>
+				<ul>
+					<li>Write once with javascript and execute it in the server side.( or viceversa )</li>
+					<li>Rewrite any function twice.</li>				
+				</ul>
+			</font>
+			
+		</div>
+		
+		<div id="SSMWC_OTHER_PROBLEM" class=" step" style="height:200px"  data-x="12000" data-y="13000" data-z="30"  data-scale="3">
+			<h2 class="center">SSMVC: SEO and History:  </h2>
+			<h3>Main issues:</h3>			
+			<ul>
+				<li> Crawlers can't interpretate javascript </li>			
+				<li> How to refer to a specific resource?</li>
+			</ul>
+			<h3>Solution:</h3>
+			<ul>
+				<li> Server side rendering </li>			
+				<li> using fragment: #a=1&b=2</li>
+			</ul>
+		</div>
+		
+		<div id="BREAK" class=" step" style="height:400px"  data-x="15000" data-y="15000" data-z="50"  data-scale="2">
+			<h2 class="center">But before going on... do you wanna a break?  </h2>
+			<img src="img/break.jpg">
+		</div>
+		
+		<div id="SSMW_SERVER_SIDE" class=" step" style="height:200px"  data-x="20000" data-y="20000" data-z="50"  data-scale="5">
+			<h2 class="center">SSMW: The other face of money  </h2>
+		</div>
+		
+		<div id="SSMW_FEATURES" class=" step" style="height:200px"  data-x="19000" data-y="19000" data-z="50"  data-scale="1">
+			<h2 class="center">SSMW: features  </h2>
+			<ul style="font-size:1.5em">
+				<li>Aggregator: data,css,js </li>
+				<li>Data: Webapi</li>
+				<li>Template</li>	
+				<li>Language</li>			
+			</ul>
+		</div>
+		
+		<div id="SSMW_AGGREGATOR" class=" step" style="height:800px"  data-x="19000" data-y="16000" data-z="50"  data-scale="1">
+			<h2 class="center">SSMW: features  </h2>
+			<img class="imagecentered" src="img/clientandserver.png">
+		</div>
+		
+		
+		<div id="SSMW_FINAL" class=" step" style="height:600px"  data-x="25000" data-y="16000" data-z="50"  data-scale="1">
+			<h1 class="center"> What's next? </h1>
+			<img src="img/final.jpg">
+		</div>
+		
+		<div id="SSMW_FINAL_THANKS" class=" step" style="height:200px"  data-x="30000" data-y="16000" data-z="50"  data-scale="15">
+			<h1 style="text-align:center">Thanks for attentions</h1>
+		</div>
+		
+	</div>	
+</body>
+
+
+<footer>
+<script type="text/javascript" src="js/impress.js" ></script>
+<script type="text/javascript">impress().init();</script>
+</footer>
+</html>
+
+

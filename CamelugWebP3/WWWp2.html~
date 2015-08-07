@@ -1,0 +1,610 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Camelug presentation part 2">
+	<meta name="keywords" content"Bootstrap,WS,Laravel,AJAX">
+	<meta name="author" content="Unknown" >
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/mycss.css">
+
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		
+</head>
+
+<body>
+	<div id="impress">
+		<div class="no-support-message"> 
+		Your browser doesn't support impress.js. Try Chrome or Safari. 
+		</div> 
+		<div id="main" class="step" data-x="0" data-y="4050" data-z="0" data-scale="10" >
+			<h3 >Camelug Web part 3 -<br> Client and server  </h3>				
+			
+		</div>
+		<div id="main1" class="step" data-x="-4000" data-y="-4000" >
+			<div class="center">
+    			<h1>WWW</h1>
+    			<h2>I like you</h2>
+    			<h3 class="pad7">
+					Supervisor: Fabio Pagnotta
+				</h3>
+				<img src="img/imagecc.png">
+			</div>			
+		</div>
+		<div id="client" class="step" data-x="-3000" data-y="-4000"  >
+			<h3 class="center" ><b> Part 1 </b></h3>
+			<img class="imagecentered" src="img/js.png">
+		</div>
+		<div id="server" class="step" data-x="-2000" data-y="-4000" >
+			<h3 class="center" ><b> Part 2 </b></h3>
+			<img class="imagecentered" src="img/server.png">
+		</div>
+		
+		<div id="bootstrap" class="step" data-x="-500" data-y="-4000" >
+			<h3 class="center" ><b>Part 3 </b></h3>
+			<font style="text-align:center;color:red;font-size:10em">&nbsp;&nbsp;&nbsp;&nbsp;18+</font>
+		</div>
+		<div id="bcontainer" class="step" data-x="-1000" data-y="-3000" >
+			<h3 class="center">Bootstrap container</h3>
+			<ul>
+				<li>Fixed width:</li>
+				<code>
+				&lt;div class="container"&gt;
+  					...
+				&lt;/div&gt;				
+				</code>			
+				<li>Full width:</li>
+				<code>				
+				&lt;div class="container-fluid"&gt;
+  					...
+				&lt;/div&gt;
+				</code>
+				
+			</ul>
+			<img src="img/container.png">
+			
+		</div>
+		<div id="bgrid" class="step" data-x="-3000" data-y="-3000" >
+			<h3 class="center">Bootstrap grid</h3>
+			<ul>			
+			<li>-Matrix with different cell size(width/height).</li>
+			<li>-How to define a row:</li>
+			<code>
+			&lt;div class="row"&gt;
+			&lt;/div&gt;			
+			</code>
+			<li> Define a cell</li>
+			<code>
+			&lt;div class=" .col-X-Y"&gt;
+			&lt;/div&gt;
+			</code>
+			<li> X can be:
+			<ul>
+				<li>xs:Extra small devices </li>						
+				<li>sm Small devices </li>
+				<li>md:Medium devices</li>
+				<li>lg:Large devices</li>
+			</ul>
+			<li> Y can be a number between 1 and 9.</li>
+			<li> We can also add an offset after the cell, just adding <code>col-X-offset-Y</code>
+			</ul>
+		</div>
+		<div id="bcomponents" class="step" data-x="0" data-y="-3000" >
+			<h3 class="center">Bootstrap components</h3>	
+			<h4>
+			<ul>
+				<li> Button</li>
+				<li> Progress bar</li>
+				<li> Panel</li>
+				<li> Carousel</li>
+				<li> Table</li>
+				<li> Alert</li>
+				<li> Image</li>
+				<li> Navbar</li>
+				<li> Form</li>
+				<li> and so on...(see on web site)</li>			
+			
+			</ul>	
+			</h4>
+		</div>
+		
+		<div id="communication" class="step" data-x="0" data-y="0" data-z="10">
+			<h2 class="center"> Client and Server interaction:</h2>
+			<img class="imagecentered" src="img/comunication.png">			
+			<h3 class="center"> Usually the server listen to the 80 port </h3>
+			<h3 class="center"> Several way to interact with the server</h3>
+			<h3>
+			<ul class="center listnone">
+				<li>Forms</li>
+				<li>Ajax</li>
+				<li>Web socket</li>
+			</ul>
+			</h3>
+		</div>		
+		<div id="http" class="step" data-x="1000" data-y="0" data-z="10">
+			<h2 class="center">What they have in common: HTTP </h2>
+			<img src="img/httpformat.jpeg">
+		</div>
+		<div id="httpservices" class="step" data-x="1000" data-y="1000" data-z="10">
+			<h2 class="center">HTTP services </h2>
+			<h2> Client side</h2>
+			<h3>				
+			<ul>
+				<li>Url address</li>	
+				<li>Cookie</li>
+				<li>Method( OPTIONS GET HEAD POST PUT DELETE TRACE CONNECT PATCH)</li>	
+			</ul>		
+			</h3>
+			<h2> Server side</h2>
+			<h3>				
+				<ul>
+					<li>Status code(200,ec..)</li>	
+					<li>Cache</li><li>Cookie</li>
+					<li>Compression</li>								
+				</ul>		
+			</h3>
+		</div>
+		
+		<div id="formget" class="step" data-x="1000" data-y="2000" data-z="10">
+			<h2 >Forms: get Request </h2>				
+			<code>
+			&lt;form action="demo_form.php" method="get"&gt;<br>
+  				First name: &lt;input type="text" name="fname"&gt;&lt;br&gt;<br>
+  				Last name: &lt;input type="text" name="lname"&gt;&lt;br&gt;<br>
+  				&lt;select name="car"&gt;<br>
+  					&lt;option value="volvo"&gt;Volvo&lt;/option&gt;<br>
+  					&lt;option value="saab"&gt;Saab&lt;/option&gt;<br>
+  					&lt;option value="mercedes"&gt;Mercedes&lt;/option&gt;<br>
+  					&lt;option value="audi"&gt;Audi&lt;/option&gt;<br>
+				&lt;/select&gt;<br>
+  				&lt;input type="submit" value="Submit"&gt;<br>
+			&lt;/form&gt;<br>
+			</code>
+			
+		</div>
+		<div id="formget" class="step" data-x="1950" data-y="2000" data-z="10">
+			<h2 >Request Get </h2>		
+			<img src="img/httpget.png"/>
+		
+		</div>
+		<div id="formpost" class="step" data-x="1950" data-y="3050" data-z="10">
+			<h2 >Request Post </h2>		
+			<img src="img/httppost.png"/>
+		
+		</div>
+		<div id="formpostfile" class="step" data-x="1950" data-y="4050" data-z="10">
+			<h2 >Request Post with file </h2>				
+			<img src="img/httppostwithfile.png"/>
+		
+		</div>
+		
+		<div id="main2" class="step" data-x="0" data-y="10050" data-z="0" data-scale="10" >
+			<h3 >Camelug Web part 2 -<br> Web server  </h3>
+		</div>
+		
+		<div id="...oforseno..." class="step" data-x="-4000" data-y="6050" data-z="0"  >
+			<h2 class="center" > ...O forse no...</h2>
+			<img src="img/ajax.png">
+		</div>
+		
+		<div id="jajax" class="step" data-x="-3000" data-y="5050" data-z="0">
+			<h2 class="center"> Ajax and Jquery </h2>
+			<code>
+			var menuId = $( "ul.nav" ).first().attr( "id" );<br>
+			var request = $.ajax({<br>
+  				url: "script.php",<br>
+  				method: "POST",<br>
+  				data: { id : menuId },<br>
+  				dataType: "html"<br>
+			});<br>
+ 
+			request.done(function( msg ) {<br>
+  				$( "#log" ).html( msg );<br>
+			});<br>
+ 
+			request.fail(function( jqXHR, textStatus ) { <br>
+  				alert( "Request failed: " + textStatus ); <br>
+			}); <br>
+			</code>		
+		</div>
+		
+		<div id="pollingajax" class="step" data-x="-3000" data-y="6050" data-z="0">
+			<h2 class="center"> Polling (jquery) </h2>
+			<code>
+			(function poll(){<br>
+   			setTimeout(function(){<br>
+     				 $.ajax({ url: "server", success: function(data){<br>
+      			  //Update your dashboard gauge<br>
+      			  salesGauge.setValue(data.value);<br>
+			
+     				   //Setup the next poll recursively<br>
+    				    poll();<br>
+    				  }, dataType: "json"});<br>
+ 			 }, 30000);<br>
+				})();failed: " + textStatus ); <br>
+			}); <br>
+			</code>		
+		</div>
+		
+		<div id="longpollingajax" class="step" data-x="-3000" data-y="7050" data-z="0">
+			<h2 class="center"> Long polling (jquery) </h2>
+			<code>
+			function waitForMsg(){<br>
+        /* This requests the url "msgsrv.php"<br>
+        When it complete (or errors)*/<br>
+        $.ajax({<br>
+            type: "GET",<br>
+            url: "msgsrv.php",<br>
+
+            async: true, /* If set to non-async, browser shows page as "Loading.."*/<br>
+            cache: false,<br>
+            timeout:50000, /* Timeout in ms */<br>
+
+            success: function(data){ /* called when request to barge.php completes */<br>
+                addmsg("new", data); /* Add response to a .msg div (with the "new" class)*/<br>
+                setTimeout(<br>
+                    waitForMsg, /* Request next message */<br>
+                    1000 /* ..after 1 seconds */<br>
+                );<br>
+            },<br>
+            error: function(XMLHttpRequest, textStatus, errorThrown){<br>
+                addmsg("error", textStatus + " (" + errorThrown + ")");<br>
+                setTimeout(<br>
+                    waitForMsg, /* Try again after.. */<br>
+                    15000); /* milliseconds (15seconds) */<br>
+            }
+        });
+			</code>		
+		</div>		
+		<div id="websocket" class="step" data-x="-2000" data-y="6050" data-z="0" data-rotate="-180">
+			<h2 class="center"> Web socket (HTML 5 -2014) (ex ie8 and ie9)</h2>
+			<h3>Creation</h3>
+			<code>
+			var connection = new WebSocket('ws://html5rocks.websocket.org/echo', ['soap', 'xmpp']);
+			</code>	
+			<h3>Events</h3>
+			<code>
+			// When the connection is open, send some data to the server<br>
+			connection.onopen = function () {<br>
+  				connection.send('Ping'); // Send the message 'Ping' to the server<br>
+			};<br>
+
+			// Log errors
+			connection.onerror = function (error) {<br>
+  				console.log('WebSocket Error ' + error);<br>
+			};<br>
+
+			// Log messages from the server<br>
+			connection.onmessage = function (e) {<br>
+  				console.log('Server: ' + e.data);<br>
+			};<br>
+		</code>
+		<h3>Sending data.</h3>
+		<code>
+			connection.send('your message');		
+		</code>
+		</div>
+		
+		
+		<div id="wsmain3" class="step" data-x="2000" data-y="8550" data-z="50" >
+			<h2 class="center"> Web server(pausa) </h2>
+			<br>
+			<img class="imagecentered" src="img/blackbox.png">
+		</div>
+		
+		<div id="webservice_architecture" class="step" data-x="4000" data-y="8550" data-z="50" >
+			<h2 class="center"> Architecture with Laravel </h2> 	
+			<br>
+			<img class="imagecentered" src="img/architecture.png">
+		</div>
+		<div id="laravel_services" class="step" data-x="5000" data-y="8550" data-z="50" >
+			<h2 class="center"> Laravel 5 services </h2>
+			<br>
+			<ul>
+				<li>Homestead</li>			
+				<li>Routing</li>
+				<li>Controller</li>
+				<li>Model</li>
+				<li>Views blade</li>
+				<li>Authentication</li>
+				<li>Cache</li>
+				<li>Logging</li>
+				<li>Pagination</li>
+				<li>Mail</li>
+				<li>Validation</li>
+				<li>Testing</li>
+				<li>ORM</li>
+				<li>Localization</li>
+				<li>Envoy</li>
+				<li>and so on...</li>
+			</ul>
+		</div>	
+			
+		<div id="laravel5routing" class="step" data-x="6500" data-y="8550" data-z="50" >
+			<h2 class="center"> Laravel 5 routing</h2>
+			<br>
+			<h3>Route with parameter</h3>
+			<code>			
+			Route::get('/', function()
+			{
+    			return 'Hello World';
+			});
+			</code>
+			<h3>Route with parameter</h3>
+			<code>
+			Route::get('user/{id}', function($id)
+			{
+    			return 'User '.$id;
+			})->where('id', '[0-9]+');		
+			</code>
+			<h3>Route with name</h3>			
+			<code>
+			Route::get('user/profile', ['as' => 'profile', function()
+			{
+    			//
+			}]);			
+			</code>
+			<h3> Route with controller</h3>
+			<code>
+				Route::get('user/profile', [
+    					'as' => 'profile', 'uses' => 'UserController@showProfile'
+				]);			
+			</code>			
+			
+			
+			
+		</div>
+		
+		<div id="laravel5routing2" class="step" data-x="7500" data-y="7750" data-z="50">
+			<h2 class="center"> Laravel 5 method</h2>		
+		<code>	
+		&lt;form action="/foo/bar" method="POST"&gt;<br>
+   		   &lt;input type="hidden" name="_method" value="PUT"&gt;<br>
+    			&lt;input type="hidden" name="_token" value="&lt;?php echo csrf_token(); ?&gt;"&gt;<br>
+		&lt;/form&gt;<br>
+		</code>
+		</div>
+		
+		<div id="laravel5mvc" class="step" data-x="10500" data-y="7750" data-z="40" data-scale="5" >
+				<h1 class="center">MVC</h1>
+		</div>
+		<div id="laravel5controller" class="step" data-x="10500" data-y="6550" data-z="30" data-scale="10" >
+				<h1 class="center">Controller</h1>
+		</div>
+		<div id="laravel5controller1" class="step" data-x="10500" data-y="4550" data-z="30"  >
+				<h1 class="center">Basic Controller</h1>
+				<code>
+				<?php namespace App\Http\Controllers; <br>
+
+				use App\Http\Controllers\Controller;<br>
+
+				class UserController extends Controller {<br>
+
+ 			   /**<br>
+ 			    * Show the profile for the given user.<br>
+ 			    *<br>
+ 			    * @param  int  $id<br>
+  			    * @return Response<br>
+  			   */<br>
+  				  public function showProfile($id)<br>
+			    {<br>
+ 			       return view('user.profile', ['user' => User::findOrFail($id)]);<br>
+ 		       }<br>
+
+				 }		<br>	
+				</code>
+		</div>
+		<div id="laravel5controller2" class="step" data-x="10500" data-y="3550" data-z="30"  >
+				<h1 class="center">Basic Controller</h1>
+				Take all input data in a Post:<br>
+				<code>
+					$input = Request::all();<br>
+					$input = Request::only('username', 'password');<br>
+					Request::file('photo')->move($destinationPath);<br>
+					if (Request::file('photo')->isValid())<br>
+				</code>
+				Associate routes with default format:<br>
+				<code>
+				Route::controller('users', 'UserController');	<br>			
+				</code>
+				<br>
+				<code>
+				// inside the controller<br>
+				public function postProfile();<br>
+				</code>
+				Restful controller<br>
+				<code>
+					Route::resource('photo', 'PhotoController');<br>
+				</code>
+				Create easily controller<br>
+				<code>
+					php artisan make:controller PhotoController	<br>			
+				</code>
+				Caching routes<br>
+				<code>
+					php artisan route:cache<br>
+				</code>
+		</div>		
+		<div id="laravel5controller3" class="step" data-x="10500" data-y="2550" data-z="30"  >
+				<h1 class="center">Middleware</h1>
+				<code>
+					<?php namespace App\Http\Middleware;<br>
+
+					class OldMiddleware {<br>
+
+ 				   /**<br>
+  	 					  * Run the request filter.<br>
+  					   *<br>
+  					   * @param  \Illuminate\Http\Request  $request<br>
+   				  * @param  \Closure  $next<br>
+   		 				 * @return mixed<br>
+    				 */<br>
+    			public function handle($request, Closure $next)<br>
+   				 {<br>
+    				    if ($request->input('age') < 200)<br>
+    			    {<br>
+    			        return redirect('home');<br>
+   				 }<br>
+   			     return $next($request);<br>
+    }<br>
+
+}<br>				
+				
+				</code>
+		</div>				
+		<div id="laravel5model" class="step" data-x="16000" data-y="8550" data-z="30" data-scale="10" >
+				<h1 class="center">Model</h1>
+		</div>
+		<div id="laravel5model1" class="step" data-x="17000" data-y="8550" data-z="30"  >
+				<h1 class="center">Create model</h1>
+				<ul>
+					<li>Access to file and modify: <code>.env</code></li>				
+					<li>Create your schema</li>
+					<li>Query the database</li>
+				</ul>	
+		</div>
+		<div id="laravel5model2" class="step" data-x="18000" data-y="8550" data-z="30"  >
+				<h1 class="center">Change file .env</h1>
+				<ul>				
+				<li>DB_HOST</li>
+				<li>DB_DATABASE</li>
+				<li>DB_USERNAME</li>
+				<li>DB_PASSWORD</li>
+				</ul>
+				
+		</div>
+		<div id="laravel5model3" class="step" data-x="19000" data-y="8550" data-z="30"  >
+				<h1 class="center">Create your schema</h1>
+				<ul>
+				<li>php artisan make:migration create_tablename_table</li>
+				<li>open folder database/migrations and modify your migrations</li>
+				<li> in / of php site, perform php artisan migrate</li>
+				</ul>
+				
+		</div>
+		<div id="laravel5model4" class="step" data-x="20000" data-y="8550" data-z="30" >
+				<h1 class="center">Query the database</h1>
+				<h3> There are several ways to do that:</h3>
+				<ul>
+					<li>using database raw query <code>$results = DB::select('select * from users where id = ?', [1]);</code></li>
+					<li>using query builder <code>DB::table('users')->get();</code></li>	
+					<li>using eloquent orm  </li>
+						<ul>
+							<li>Define the model : php artisan make:model User</li>
+						</ul>			
+				</ul>
+		</div>
+		
+		<div id="laravel5view" class="step" data-x="5500" data-y="8550" data-z="30" data-scale="10" >
+				<h1 class="center">View</h1>
+				
+		</div>
+		
+		<div id="laravel5view1" class="step" data-x="5500" data-y="4550" data-z="30" >
+				<h1 class="center">View</h1>
+				<code>
+				<?php namespace App\Http\Controllers; <br>
+
+				use App\Http\Controllers\Controller;<br>
+
+				class UserController extends Controller {<br>
+
+ 			   /**<br>
+ 			    * Show the profile for the given user.<br>
+ 			    *<br>
+ 			    * @param  int  $id<br>
+  			    * @return Response<br>
+  			   */<br>
+  				  public function showProfile($id)<br>
+			    {<br>
+ 			       return view('user.profile', ['user' => User::findOrFail($id)]);<br>
+ 		       }<br>
+
+				 }		<br>	
+				</code>
+		</div>
+		<div id="laravel5view2" class="step" data-x="5500" data-y="3550" data-z="30" >
+				<h1 class="center">View layouts/blade.blade.php</h1>
+				<code>
+&lt;html&gt;.<br>
+    &lt;head&gt;.<br>
+        &lt;title&gt;App Name - @yield('title')&lt;/title&gt;.<br>
+    &lt;/head&gt;.<br>
+    &lt;body&gt;.<br>
+        @section('sidebar').<br>
+            This is the master sidebar..<br>
+        @show.<br>
+
+        &lt;div class="container"&gt;.<br>
+            @yield('content').<br>
+        &lt;/div&gt;.<br>
+    &lt;/body&gt;.<br>
+&lt;/html&gt;.<br>
+				</code>
+		</div>
+		<div id="laravel5view3" class="step" data-x="5500" data-y="2550" data-z="30" >
+		<h1 class="center">A basic layout </h1>
+		<code>
+	@extends('layouts.master').<br>
+
+@section('title', 'Page Title').<br>
+
+@section('sidebar').<br>
+    @parent.<br>
+
+    &lt;p&gt;This is appended to the master sidebar.&lt;/p&gt;.<br>
+@stop.<br>
+
+@section('content').<br>
+    &lt;p&gt;This is my body content.&lt;/p&gt;.<br>
+@stop	.<br>
+			
+		
+		</code>		
+		
+		
+		</div>
+		<div id="laravel5view4" class="step" data-x="5500" data-y="1550" data-z="70" >
+		<h1 class="center">View - what i can do...</h1>
+		<ul>
+		<li> Usare if  </li>
+		<code>
+		@if (count($records) === 1)<br>
+    		I have one record!<br>
+		@elseif (count($records) > 1)<br>
+    		I have multiple records!<br>
+		@else<br>
+    			I don't have any records!<br>
+		@endif<br>
+		</code>
+		<li>  		
+		Usare for o foreach
+		</ul>
+		<code>
+			@for ($i = 0; $i < 10; $i++)<br>
+    The current value is {{ $i }}<br>
+@endfor<br>
+
+@foreach ($users as $user)<br>
+    This is user {{ $user->id }}<br>
+@endforeach		<br>
+		
+		</code>
+		<li>calling php code  <code>{{ time() }}</code></li>
+		
+		</div>
+	</div>	
+</body>
+
+
+<footer>
+<script type="text/javascript" src="js/impress.js" ></script>
+<script type="text/javascript">impress().init();</script>
+</footer>
+</html>
+
+
